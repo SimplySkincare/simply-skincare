@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Skincare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f8c4c4;
+            --secondary-color: #fff;
+            --text-color: #333;
+            --accent-color: #e07b7b;
+            --shadow-color: rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 20px 10%;
+            box-shadow: 0 2px 5px var(--shadow-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--accent-color);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+            text-align: center;
+        }
+
+        .routine-step {
+            background-color: var(--primary-color);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .routine-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow-color);
+        }
+
+        .routine-step h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: var(--secondary-color);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px var(--shadow-color);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow-color);
+        }
+
+        .product-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #d15b5b;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            text-align: center;
+            padding: 30px 10%;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 40px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Simply Skincare</h1>
+    <nav>
+        <a href="#about">Über Mich</a>
+        <a href="#routine">Routine</a>
+        <a href="#products">Produkte</a>
+        <a href="#experience">Erfahrung</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>Über Simply Skincare</h2>
+    <p>Authentische Hautpflege, ehrliche Empfehlungen. Willkommen bei Simply Skincare DE! Meine Mission ist es, dir zu helfen, DEINE perfekte Skincare-Routine zu finden. Hier teile ich sanfte Skincare-Routinen, Wissen zu Inhaltsstoffen und ehrliche Produktempfehlungen.</p>
+</section>
+
+<section id="routine">
+    <h2>Meine Tägliche Routine</h2>
+    <div class="routine-step">
+        <h3>Schritt 1: Reinigung</h3>
+        <p>Eine sanfte Reinigung entfernt Schmutz und überschüssigen Talg, ohne die Haut auszutrocknen oder zu reizen.</p>
+    </div>
+    <div class="routine-step">
+        <h3>Schritt 2: Toner</h3>
+        <p>Ein ausgleichender Toner bereitet die Haut auf die nachfolgenden Pflegeschritte vor und spendet leichte Feuchtigkeit.</p>
+    </div>
+    <div class="routine-step">
+        <h3>Schritt 3: Serum</h3>
+        <p>Leichtes Serum mit konzentrierten Wirkstoffen, das das Hautbild ausgleicht und intensive Feuchtigkeit spendet.</p>
+    </div>
+    <div class="routine-step">
+        <h3>Schritt 4: Feuchtigkeitspflege</h3>
+        <p>Reichhaltige Creme, die Feuchtigkeit versiegelt und die Hautbarriere unterstützt.</p>
+    </div>
+    <div class="routine-step">
+        <h3>Schritt 5: Sonnenschutz</h3>
+        <p>UV-Schutz schützt vor Sonneneinstrahlung und verleiht einen angenehmen Glow.</p>
+    </div>
+</section>
+
+<section id="products">
+    <h2>Meine Lieblingsprodukte</h2>
+    <div class="products">
+        <div class="product-card">Sanfte Reinigung<br><a href="#">Details ansehen →</a></div>
+        <div class="product-card">Hydrating Toner<br><a href="#">Details ansehen →</a></div>
+        <div class="product-card">Vitamin C Serum<br><a href="#">Details ansehen →</a></div>
+        <div class="product-card">Feuchtigkeitscreme<br><a href="#">Details ansehen →</a></div>
+        <div class="product-card">Sonnenschutz LSF 50+<br><a href="#">Details ansehen →</a></div>
+        <div class="product-card">Regenerierende Nachtcreme<br><a href="#">Details ansehen →</a></div>
+        <div class="product-card">Sanftes Peeling<br><a href="#">Details ansehen →</a></div>
+        <div class="product-card">Wirksame Lippenpflege<br><a href="#">Details ansehen →</a></div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Meine Hautpflege-Reise</h2>
+    <p>Ich habe viele Produkte ausprobiert und gelernt: Weniger ist mehr. Sanfte Inhaltsstoffe und klare Struktur sind entscheidend. Jede Haut ist einzigartig, daher sind Routinen individuell anpassbar.</p>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="E-Mail" required>
+        <textarea name="message" rows="5" placeholder="Nachricht" required></textarea>
+        <button type="submit">Nachricht senden</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 SimplySkincare. Alle Rechte vorbehalten | Datenschutz | Impressum</p>
+</footer>
+
+</body>
+</html>
